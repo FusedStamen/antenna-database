@@ -1,8 +1,26 @@
-# Antenna Database
+# antenna-database
 
 A systematic, empirically measured WiFi antenna database for wardriving and RF monitoring applications. All antennas characterized using a LiteVNA 64 vector network analyzer with standardized methodology, and field-tested using a Biscuit Ultra wardriving device.
 
 > **By fusedstamen** — if you found this useful, check out [WDGoWars](https://github.com/fusedstamen/WDGoWars).
+
+---
+
+## Data Status
+
+> **⚠️ Current database is Phase 1 — marker readings only.**
+
+The antenna database currently contains results from an initial testing session conducted before this methodology was formalized. Measurements were taken by reading marker values directly from the NanoVNA-App display and logging them manually. No raw S1P files were exported during this session.
+
+**Phase 2 testing is in progress.** Every antenna in the database will be retested using the full methodology documented here — S1P exports, CSV sweeps, and PNG plots per antenna per band, with the 6"x6" steel ground plane protocol applied consistently. Phase 2 results will be committed to `vna_data/` as they are completed.
+
+**Phase 1 vs Phase 2 comparison is intentional.** Comparing the two datasets serves as a consistency check and adds rigor — if results align closely it validates both the original measurements and the methodology. Significant divergences will be documented and investigated. This cross-validation approach is part of the methodology and will be written up as part of the accompanying Medium article series.
+
+**What this means for current database entries:**
+- Resonant frequency and SWR values are accurate to within typical marker reading precision (~1-2 MHz, ~0.005 SWR)
+- Verdicts (PASS/MARGINAL/FAIL) are reliable for antenna selection purposes
+- Raw S1P data for independent verification is not yet available for Phase 1 entries
+- Phase 2 entries will include full raw data and supersede Phase 1 entries where both exist
 
 ---
 
