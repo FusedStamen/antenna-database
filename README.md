@@ -48,7 +48,7 @@ The antenna database currently contains results from an initial testing session 
 - GPS L1 (GPS batch)
 - Mag-mount cable antennas (BF-Cable batch)
 - MIMO router arrays (MIMO2, MIMO3 batches)
-- Specialty antennas (ZBM2 BLE/GPS, Bolton Dart, Bolton Technical)
+- Specialty antennas (ZBM2 BLE/GPS, Bolton Dart)
 
 ---
 
