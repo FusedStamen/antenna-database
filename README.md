@@ -2,7 +2,6 @@
 
 A systematic, empirically measured WiFi antenna database for wardriving and RF monitoring applications. All antennas characterized using a LiteVNA 64 vector network analyzer with standardized methodology, and field-tested using a Biscuit Ultra wardriving device.
 
-> **By fusedstamen** - if you found this useful, check out [WDGoWars](https://github.com/fusedstamen/WDGoWars).
 
 ---
 
