@@ -185,12 +185,28 @@ Examples:
 
 ---
 
+## Community submissions
+
+This database grows through outside contributions. Everyone who submits a tested antenna gets credited here — thank you!
+
+| Antenna | Batch | Submitted by | Verdict |
+|---|---|---|---|
+| [Seeed 2.4G/5G RP-SMA, 1.13mm coax, 130mm](https://www.seeedstudio.com/2-4G-5G-External-Antenna-with-RP-SMA-Male-Connector-and-1-13-Coaxial-Cable-130mm-Set-p-6316.html) | — | FifeZaro (Discord) | Pending |
+| [Seeed 2.4GHz 2.81dBi for XIAO ESP32C3](https://www.seeedstudio.com/2-4GHz-2-81dBi-Antenna-for-XIAO-ESP32C3-p-5475.html) | — | FifeZaro (Discord) | Pending |
+
+Want to see your antenna (and name) added to this table? Test it using the methodology below and open a PR — or just send a link our way:
+- **Discord:** FusedStamen
+- **Email:** antennas@fusedstamen.com
+
+---
+
 ## Contributing
 
 If you've tested antennas using this methodology and want to contribute results, open a PR with:
 - S1P files in `vna_data/` following the naming convention above
 - Wardriving logs in `wardriving_logs/`
 - A row added to `database/antenna_master_database.csv`
+- A row added to the [Community submissions](#community-submissions) table above, with your name/handle in the "Submitted by" column
 
 Please document connector type, ground plane configuration, and which methodology version was used.
 
