@@ -7,7 +7,7 @@ A systematic, empirically measured WiFi antenna database for wardriving and RF m
 
 ## Data Status
 
-**Tier 1 (VNA) testing is complete for the current antenna inventory.** All antennas have been characterized using the full methodology — S1P exports, automated batch processing via `sort_antennas.py` and `analyze_antenna.py`, and marker readings cross-validated against script output. Results are in `database/`.
+**Tier 1 (VNA) testing is complete for the current antenna inventory.** All antennas have been characterized using the full methodology - S1P exports, automated batch processing via `sort_antennas.py` and `analyze_antenna.py`, and marker readings cross-validated against script output. Results are in `database/`.
 
 **Tier 2 (field testing) is in progress.** Good and Marginal antennas from Tier 1 proceed to Biscuit Ultra fixed-location field testing. Results will be committed to `wardriving_logs/` as sessions are completed.
 
@@ -50,7 +50,7 @@ A systematic, empirically measured WiFi antenna database for wardriving and RF m
 
 **130+ antennas tested. 118 Good / 57 Marginal / 60 Do_Not_Use.**
 
-Verdicts are based on **worst in-band SWR** within the target band window — not SWR at resonance. Threshold: < 2.0 = Good, 2.0–3.0 = Marginal, > 3.0 = Do_Not_Use. For wardriving passive receive applications, SWR < 2.0 represents under 11% reflected power and under 0.51 dB mismatch loss — not meaningful in practice.
+Verdicts are based on **worst in-band SWR** within the target band window - not SWR at resonance. Threshold: < 2.0 = Good, 2.0–3.0 = Marginal, > 3.0 = Do_Not_Use. For wardriving passive receive applications, SWR < 2.0 represents under 11% reflected power and under 0.51 dB mismatch loss — not meaningful in practice.
 
 ### Top 10 dual-band (2.4 + 5 GHz), ranked by average worst in-band SWR
 
@@ -71,15 +71,15 @@ Verdicts are based on **worst in-band SWR** within the target band window — no
 
 ### Notable findings
 
-**MIMO panels (Facebook Marketplace, unknown brand):** Cleanest results in the entire database. MIMO2-02 is the best single antenna measured — SWR 1.140 / 1.116 across both bands. No buy link available.
+**MIMO panels (Facebook Marketplace, unknown brand):** Cleanest results in the entire database. MIMO2-02 is the best single antenna measured - SWR 1.140 / 1.116 across both bands. No buy link available.
 
-**Bingfu BF vs BFD — same brand, different antenna:** BF paddles (claimed 8dBi dual-band) are effectively 2.4 GHz only — 5G SWR 4.25–6.09. BFD paddles (same claimed spec) are functional dual-band with 5G SWR under 2.0. Same Bingfu branding, clearly different internal designs.
+**Bingfu BF vs BFD — same brand, different antenna:** BF paddles (claimed 8dBi dual-band) are effectively 2.4 GHz only - 5G SWR 4.25–6.09. BFD paddles (same claimed spec) are functional dual-band with 5G SWR under 2.0. Same Bingfu branding, clearly different internal designs.
 
-**Bolton Dart / Taoglas GW.05:** SWR 4.2–4.5 at 2.4 GHz in free space. Designed for metal-chassis routers with a PCB ground plane — not for portable wardriving use. Do_Not_Use verdict confirmed across both units.
+**Bolton Dart / Taoglas GW.05:** SWR 4.2–4.5 at 2.4 GHz in free space. Designed for metal-chassis routers with a PCB ground plane - not for portable wardriving use. Do_Not_Use verdict confirmed across both units.
 
 **HzFitInc ADS-B 1090 MHz:** SWR 1.020 exactly at 1090 MHz. Best single spot reading in the database.
 
-**RatlSnake M6 telescopic at optimal length (3 sections collapsed):** SWR 1.200 at 1090 MHz — competitive with the dedicated ADS-B stubby. Detailed length-vs-SWR sweep documented in database.
+**RatlSnake M6 telescopic at optimal length (3 sections collapsed):** SWR 1.200 at 1090 MHz - competitive with the dedicated ADS-B stubby. Detailed length-vs-SWR sweep documented in database.
 
 ---
 
@@ -125,7 +125,7 @@ python scripts/analyze_wardrive.py --compare \
 
 Full testing methodology is documented in [`methodology/wifi_antenna_testing_methodology_v4.md`](methodology/wifi_antenna_testing_methodology_v4.md).
 
-**Tier 1 — VNA bench testing:**
+**Tier 1 - VNA bench testing:**
 - LiteVNA 64 with NanoVNA-App
 - Three-step process: marker screening → S1P export → automated processing
 - Separate calibration profiles per frequency range
@@ -133,14 +133,14 @@ Full testing methodology is documented in [`methodology/wifi_antenna_testing_met
 - All three data sources (markers, sort_antennas.py, analyze_antenna.py) must agree
 - Verdict based on worst in-band SWR, not SWR at resonance
 
-**Tier 2 — Fixed-location field testing:**
+**Tier 2 - Fixed-location field testing:**
 - Biscuit Ultra (firmware v1.4.1+), RSSI threshold default 5
 - Antenna under test on ESP32-C5 SMA port
 - 50-ohm terminator on ESP32-WROOM SMA port (eliminates WROOM as a confound)
 - 3 runs per antenna, 5 minutes each
 - Primary metric: unique BSSID count with median RSSI < -80 dBm
 
-**Tier 3 — Open field range comparison:**
+**Tier 3 - Open field range comparison:**
 - uConsole (CM4, AC1200) as controlled AP at verified TX power
 - Biscuit Ultra as receiver at measured distances (P3 = 50m primary)
 - Results expressed as relative gain vs TC-01 reference — no absolute dBi claims
@@ -187,14 +187,14 @@ Examples:
 
 ## Community submissions
 
-This database grows through outside contributions. Everyone who submits a tested antenna gets credited here — thank you!
+This database grows through outside contributions. Everyone who submits a tested antenna gets credited here - thank you!
 
 | Antenna | Batch | Submitted by | Verdict |
 |---|---|---|---|
 | [Seeed 2.4G/5G RP-SMA, 1.13mm coax, 130mm](https://www.seeedstudio.com/2-4G-5G-External-Antenna-with-RP-SMA-Male-Connector-and-1-13-Coaxial-Cable-130mm-Set-p-6316.html) | — | FifeZaro (Discord) | Pending |
 | [Seeed 2.4GHz 2.81dBi for XIAO ESP32C3](https://www.seeedstudio.com/2-4GHz-2-81dBi-Antenna-for-XIAO-ESP32C3-p-5475.html) | — | FifeZaro (Discord) | Pending |
 
-Want to see your antenna (and name) added to this table? Test it using the methodology below and open a PR — or just send a link our way:
+Want to see your antenna (and name) added to this table? Test it using the methodology below and open a PR - or just send a link our way:
 - **Discord:** FusedStamen
 - **Email:** antennas@fusedstamen.com
 
