@@ -50,7 +50,7 @@ A systematic, empirically measured WiFi antenna database for wardriving and RF m
 
 **130+ antennas tested. 118 Good / 57 Marginal / 60 Do_Not_Use.**
 
-Verdicts are based on **worst in-band SWR** within the target band window - not SWR at resonance. Threshold: < 2.0 = Good, 2.0–3.0 = Marginal, > 3.0 = Do_Not_Use. For wardriving passive receive applications, SWR < 2.0 represents under 11% reflected power and under 0.51 dB mismatch loss — not meaningful in practice.
+Verdicts are based on **worst in-band SWR** within the target band window - not SWR at resonance. Threshold: < 2.0 = Good, 2.0–3.0 = Marginal, > 3.0 = Do_Not_Use. For wardriving passive receive applications, SWR < 2.0 represents under 11% reflected power and under 0.51 dB mismatch loss - not meaningful in practice.
 
 ### Top 10 dual-band (2.4 + 5 GHz), ranked by average worst in-band SWR
 
